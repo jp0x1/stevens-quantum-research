@@ -29,7 +29,7 @@ def heisenberg_picture(operator, equation):
     return s
 #calculate what we want <down| oz,H(t) |down>
 def expectation_value(vector, operator):
-    #calculate complex conjugate * operator * vector
+    #calculate complex conjugate of vector * operator * vector
     v = vector.getH() * operator * vector
     v = complex(v)
     return v
